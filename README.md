@@ -5,13 +5,21 @@ YouBooking™ is a web application allowing users to book accommodation online.
 
 Being a full stack developer, Your solution must automate the reservation process by providing a single-page web application.
 
+
+
 The first step is described as follows:
 
-o Customers can view listings of available hotels and rooms. o Filter rooms by hotel name, availability date and city. o Make a reservation. o Consult the list of his reservations, modify or cancel a reservation.
+o Customers can view listings of available hotels and rooms. 
+
+o Filter rooms by hotel name, availability date and city. o Make a reservation. o Consult the list of his reservations, modify or cancel a reservation.
+
+
 
 The application that you are required to develop must also allow hotel owners to:
 
 o Insert all the hotels as well as the rooms they wish to be reserved by customers. o Manage the availability of rooms and hotels. o Confirm customer reservations.
+
+
 
 YouBooking™ must therefore include a space for its administrators so that they can have full control:
 
