@@ -1,0 +1,52 @@
+<!-- Section: Design Block -->
+<section class="">
+  <!-- Jumbotron -->
+  <div class="px-4 py-5 px-md-5 text-center text-lg-start" style="background-color: hsl(0, 0%, 96%)">
+    <div class="container">
+      <div class="row gx-lg-5 align-items-center">
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <div class="alert alert-danger fs-6 fw-semibold" *ngIf="errorMessage.length>0" [ngStyle]="{}">{{errorMessage}}</div>
+          <div class="alert alert-success fs-6 fw-semibold" *ngIf="successMessage.length>0" [ngStyle]="{}">{{successMessage}}</div>
+          <div class="card">
+            <div class="card-body py-5 px-md-5" style="padding-top: 5rem !important;
+    padding-bottom: 5rem !important;">
+              <form id="contact_form" (submit)="onSubmit()">
+                <!-- Username input -->
+                <div class="form-outline mb-1">
+                  <input type="text" [(ngModel)]="user.username" name="username" id="form3Example32323" class="form-control" />
+                  <label class="form-label" for="form3Example32323">Username</label>
+                </div>
+
+                <!-- Password input -->
+                <div class="form-outline mb-1">
+                  <input type="password" [(ngModel)]="user.password" name="password" id="form3Example23234" class="form-control" />
+                  <label class="form-label" for="form3Example23234">Password</label>
+                </div>
+
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-primary btn-block">
+                  Sign In
+                </button>
+                <!-- Register buttons -->
+                <div class="text-center pt-5">
+                  <p>New to the journey</p>
+                  <a class="form-label" [routerLink]="['/signup']" >Sign Up</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <h1 class="my-5 display-3 fw-bold ls-tight">
+            Let's begin the adventure <br />
+            <span class="text-primary">with You Booking </span>
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Jumbotron -->
+</section>
+<!-- Section: Design Block -->
+
+

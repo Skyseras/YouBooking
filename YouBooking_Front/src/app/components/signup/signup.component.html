@@ -1,0 +1,73 @@
+<!-- Section: Design Block -->
+<section class="">
+  <!-- Jumbotron -->
+  <div class="px-4 py-5 px-md-5 text-center text-lg-start" style="background-color: hsl(0, 0%, 96%)">
+    <div class="container">
+      <div class="row gx-lg-5 align-items-center">
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <h1 class="my-5 display-3 fw-bold ls-tight">
+            The best offer <br />
+            <span class="text-primary">for your happiness</span>
+          </h1>
+        </div>
+
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <div class="alert alert-danger fs-6 fw-semibold" *ngIf="errorMessage.length>0" [ngStyle]="{}">{{errorMessage}}</div>
+          <div class="alert alert-success fs-6 fw-semibold" *ngIf="successMessage.length>0">{{successMessage}}</div>
+          <div class="card">
+            <div class="card-body py-5 px-md-5">
+              <form id="signup_form" (submit)="onSubmit()">
+                <!-- Name input -->
+                <div class="form-outline mb-1">
+                  <input type="text" [(ngModel)]="user.name" name="name" id="form3Example312" class="form-control" />
+                  <label class="form-label" for="form3Example312">Name</label>
+                </div>
+                <!-- Username input -->
+                <div class="form-outline mb-1">
+                  <input type="text" [(ngModel)]="user.username" name="email" id="form3Example32323" class="form-control" />
+                  <label class="form-label" for="form3Example32323">Username</label>
+                </div>
+
+                <!-- Password input -->
+                <div class="form-outline mb-1">
+                  <input type="password" [(ngModel)]="user.password" name="password" id="form3Example23234" class="form-control" />
+                  <label class="form-label" for="form3Example23234">Password</label>
+                </div>
+
+                <!-- Password input -->
+                <div class="form-outline mb-1">
+                  <input type="password" [(ngModel)]="confirmPassword" name="confirm_password" id="form3Example34434" class="form-control" />
+                  <label class="form-label" for="form3Example34434">Confirm Password</label>
+                </div>
+
+                <!-- Checkbox -->
+                <div class="form-check d-flex justify-content-evenly mb-4">
+                  <input class="form-check-input me-2" type="radio" [(ngModel)]="role" name="role" value="CLIENT" id="form2Example33" checked />
+                  <label class="form-check-label" for="form2Example33">
+                    Simple User
+                  </label>
+                  <input class="form-check-input me-2" type="radio" [(ngModel)]="role" name="role" value="OWNER" id="form2Example333" checked />
+                  <label class="form-check-label" for="form2Example333">
+                    Manager
+                  </label>
+                </div>
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-primary btn-block">
+                  Sign up
+                </button>
+                <!-- Register buttons -->
+                <div class="text-center">
+                  <p>already a user</p>
+                  <a class="form-label" [routerLink]="['/login']" >Sign In</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Jumbotron -->
+</section>
+<!-- Section: Design Block -->
+
